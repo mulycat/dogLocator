@@ -26,10 +26,7 @@ void loop() {
   else {
     digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
       
-       for (int i=30; i <= 1955; i = i*1.05){
-          tone(pinSpeaker, i , 100);
-          delay(2);
-        } 
+      playTone(50, 500);
   }
   delay(4000);                       // wait for a second
 }
